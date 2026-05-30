@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FLUXZONE AI Infinity — BrayenXD</title>
+    <meta name="description" content="Asisten AI Super Cerdas Multi-API dengan upload file, berita real-time, voice input, dark mode, & export chat">
+    <meta name="author" content="BrayenXD">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== HEADER SECTION ========== -->
+<div id="header">
+    <div class="logo-container">
+        <img src="https://cdn.phototourl.com/free/2026-05-30-242f4d72-d96d-4432-adcf-bf4bdefcde73.png" 
+             alt="FLUXZONE AI Logo" 
+             class="logo-img" 
+             onerror="this.style.display='none'">
+        <span class="logo">FLUXZONE AI</span>
+    </div>
+    <div class="dev-info">
+        <span class="dev-dot"></span>
+        <span>Dikembangkan oleh <strong>BrayenXD</strong> — Content Creator & Developer AI</span>
+    </div>
+    <span id="apiName"></span>
+    <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" title="Ganti Tema">🌙</button>
+        <button class="icon-btn" id="exportBtn" title="Export Chat">📥</button>
+        <div id="statusBadge">
+            <span class="dot" id="statusDot"></span>
+            <span id="statusText">Siap</span>
+        </div>
+    </div>
+</div>
+
+<!-- ========== CHAT CONTAINER ========== -->
+<div id="chat">
+    <div class="welcome" id="welcomeScreen">
+        <div class="welcome-icon">⚡</div>
+        <h2>FLUXZONE AI Infinity</h2>
+        <p>Asisten AI Super Cerdas • Multi-API • Upload File • Voice Input • Dark Mode • Export Chat</p>
+        <p style="font-size:0.75em; opacity:0.7;">Created by <strong>BrayenXD</strong></p>
+        <div class="quick-actions">
+            <span class="quick-btn" data-quick="Halo FLUXZONE! Kenalin dirimu dan semua kemampuanmu">👋 Sapa FLUXZONE</span>
+            <span class="quick-btn" data-quick="Berita terkini Indonesia hari ini">📰 Berita</span>
+            <span class="quick-btn" data-quick="Bikinin kode Python REST API lengkap dengan database">💻 Coding</span>
+            <span class="quick-btn" data-quick="Analisis mendalam tentang masa depan AI di 2030">🔍 Analisis</span>
+            <span class="quick-btn" data-quick="Tulis cerita fiksi ilmiah tentang koloni Mars">✍️ Kreatif</span>
+            <span class="quick-btn" data-quick="Rekomendasi laptop untuk programming 2026">💡 Saran</span>
+        </div>
+    </div>
+</div>
+
+<!-- ========== INPUT SECTION ========== -->
+<div id="inputArea">
+    <button class="btn-circle" id="btnAttach" title="Lampirkan file/gambar">+</button>
+    <button class="btn-circle" id="btnVoice" title="Voice Input (Suara)">🎤</button>
+    <input type="file" id="fileInput" style="display:none" multiple accept="image/*,.pdf,.txt,.doc,.docx,.js,.py,.html,.css,.php,.json,.xml,.csv">
+    <textarea id="userInput" placeholder="Ketik atau gunakan voice input... (Enter kirim, Shift+Enter baris baru)" rows="1"></textarea>
+    <button class="btn-circle" id="btnSend" title="Kirim">➤</button>
+</div>
+<div class="footer-credit">
+    ⚡ FLUXZONE AI Infinity © 2026 — Dikembangkan oleh <strong>BrayenXD</strong> — Content Creator & Developer AI
+</div>
+
+<!-- ========== EXPORT MODAL ========== -->
+<div id="exportModal" class="modal hidden">
+    <div class="modal-content">
+        <h3>📥 Export Chat History</h3>
+        <p>Pilih format export:</p>
+        <div class="modal-buttons">
+            <button class="modal-btn primary" id="exportTxt">TXT</button>
+            <button class="modal-btn primary" id="exportJson">JSON</button>
+            <button class="modal-btn secondary" id="closeModal">Batal</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
